@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.nav{
+    width:100%;
+    background-color:transparent;
+    padding: 20px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 99;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    float:right;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:white; 
+    padding: 20px;
+}  
+
+.logo{
+    width:10%;
+    float:left;
+    margin-top:-30px;
+    margin-left: 50px;
+}
+.logo img{
+    width:100%;
+    height: 40px;
+}
+.nav-links{
+    width: 100%;
+    float:left;
+    margin-left:-100px ;
+}
+.nav-links ul{
+    padding: 0px;
+}
+.content{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    margin-bottom:20px;
+
+    
+}
+
+.content img{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.card{
+    width: 21%;
+    height: 300px;
+    position: relative;
+    overflow:hidden;
+    border: 5px solid white;
+    float:left;
+    margin:auto;
+    padding: 10px;
+    margin-left:25px;
+    
+    
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    opacity: 0;
+    transition: 1s;
+}
+.card-caption{
+    text-align: center;
+    color:white;
+    position: absolute;
+    top:40%;
+}
+.card:hover .overlay{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+.card:hover{
+    box-shadow:20px 10px 50px 1px black;
+}
+.backOverlay{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top:100vh;
+    right:0;
+    left:0;
+    bottom:0;
+    opacity: 0.4;
+    transition: 1s;
+}
+.content:hover .backOverlay{
+    opacity:1;
+    top:0px;
+}
+.textOver{
+    color:white;
+    position: absolute;
+    width: 100%;
+    top:0px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    z-index: 2;
+    
+}
+
+.content:hover .textOver{
+    opacity: 1;
+    top: 50vh;
+}
+.clear{
+    clear:both;
+}
